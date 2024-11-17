@@ -1,0 +1,108 @@
+@import "./constants.scss";
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f4f5fa;
+}
+
+#root {
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.padding-10 {
+  padding: 10px !important;
+}
+
+.margin-top-20 {
+  margin-top: 20px !important;
+}
+
+.app-title {
+  color: $primary !important;
+  margin-top: 1rem !important;
+  white-space: nowrap;
+  transition: width 0.5s ease;
+  padding: 0rem 1rem 1rem 1rem;
+  overflow: hidden;
+
+  &.collapsed{
+    opacity: 0;
+  }
+}
+
+.app-content {
+  padding: 1.5rem;
+  height: calc(100vh - 4rem);
+  background-color: $bgColorSiteContent;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+.page-content {
+  padding: 24px;
+  background-color: $bgColorCard;
+  border-radius: 10px;
+
+}
+
+.page-content .page-sub-title {
+  display: flex;
+  justify-content: left;
+}
+
+.page-title {
+  margin-top: 0.8rem !important;
+  padding-left: 1rem;
+}
+
+.page-sub-title {
+  margin: 0 !important;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #f5f5f5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.signOut {
+  position: absolute;
+  bottom: 0;
+}
+
+.app-pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  padding-top: 2rem;
+}
+
+// REPORT SCREEN LEFT TABS STYLING
+.custom-tabs .ant-tabs-nav {
+  padding: 20px 25px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.custom-tabs .ant-tabs-tab {
+  border: 1px dotted #ccc; 
+  padding: 15px 40px !important;
+  margin: 0; 
+}
+
+.custom-tabs .ant-tabs-tab-active {
+  border-bottom: 2px solid #1890ff;
+}
+
+.custom-tabs .ant-tabs-tab:hover {
+  background-color: #f5f5f5;
+}
